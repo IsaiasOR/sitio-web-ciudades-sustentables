@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import DropdownMenu from './DropdownMenu';
 import { navigationItems } from '../../utils/NavigationData';
 import Arrow from '../../assets/icons/arrow.png';
-import { navLinkStyles } from '../../utils/styles';
+import { navLinkStyles } from '../../utils/Styles.jsx';
 
 export default function DesktopMenu({ closeAllMenus }) {
     return (
