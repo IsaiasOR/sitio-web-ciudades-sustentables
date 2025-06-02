@@ -7,7 +7,7 @@ import Contacto from './pages/contacts/Contact.jsx';
 import Antecedentes from './pages/precedents/Precedents.jsx';
 import Integrantes from './pages/members/Members.jsx';
 import QueHacemos from './pages/whatWeDo/WhatWeDo.jsx';
-import Footer from './components/footer/Footer.jsx';
+import Footer from './components/Footer/Footer.jsx';
 import AntecedentesPidNovel7037 from './pages/precedents/pids/PidNovel7037.jsx';
 import AntecedentesPidNovel7038 from './pages/precedents/pids/PidNovel7038.jsx';
 import AntecedentesPid7045 from './pages/precedents/pids/Pid7045.jsx';
