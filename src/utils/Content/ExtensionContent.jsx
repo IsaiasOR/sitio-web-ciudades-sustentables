@@ -1,0 +1,4 @@
+export const siSeRecicle = {
+    tile: "¡SI SE RECICLA, NO ES BASURA!",
+    text: "En el año 2021/2022 integrantes del equipo llevaron a cabo la acción de extensión denominada \"Si se recicla no es basura\". La misma, tuvo como objetivo principal concientizar sobre la problemática medioambiental que atravesamos como sociedad a nivel mundial y compartir la importancia de realizar distintas acciones y medidas que están a nuestro alcance para así reducir nuestro impacto ambiental, contribuyendo a un desarrollo más sostenible en el tiempo. En pos de dicha acción, se implementaron “Estaciones de separación de residuos” dentro del edificio de la Facultad Ciencias de la Administración, en donde se separan los residuos garantizandose su correcta disposición. Actualmente la Facultad tiene a cargo la gestión de está iniciativa propiciada por el equipo.",
+}

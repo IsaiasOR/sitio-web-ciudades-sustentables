@@ -1,0 +1,36 @@
+import HeroSection from '../../components/HeroSection/HeroSection';
+import ImageCover from '../../assets/images/que-hacemos-hero.jpg';
+import ShowResearchTopics from './components/ShowResearchTopics';
+import { metodologia } from '../../utils/Content/WhatWedoContent';
+import { Link } from "react-router-dom";
+
+export default function QueHacemos() {
+    const [boldPart, ...rest] = metodologia.methodology.split(':');
+
+    return (
+            <main>
+                {/* Sección Hero */}
+                <HeroSection
+                    backgroundImage={ImageCover}
+                    title="¿Qué hacemos?"
+                />
+
+                <section className="flex justify-center my-10">
+                    <ShowResearchTopics />
+                </section>
+
+                <section className="bg-[#6ba94f] text-white text-center py-15 px-5 text-lg md:text-xl">
+                    <p><strong>{boldPart}:</strong>{rest.join(':')}</p>
+                </section>
+
+                <section className="bg-[#6ba94f] text-white text-center py-15 px-5 flex justify-center items-center flex-col md:flex-row md:justify-evenly">
+                    <h1 className="font-bold text-xl md:text-3xl">Algunas de nuestras actividades</h1>
+                    <Link to="/que-hacemos/actividades">
+                        <button className="text-black font-bold bg-white px-20 py-2 mx-2 my-5 hover:cursor-pointer hover:shadow-md hover:bg-gray-100 rounded-lg">
+                            Actividades
+                        </button>
+                    </Link>
+                </section>
+            </main>
+        );
+}
