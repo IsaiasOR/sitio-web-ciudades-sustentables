@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import useHoverSupport from './UseHoverSupport';
 import classNames from 'classnames';
-import { navLinkStyles } from '../../utils/styles';
+import { navLinkStyles } from '../../utils/Styles.jsx';
 import { useEffect, useRef } from 'react';
 
 export default function DropdownMenu({ title, basePath, items, icon, closeAll }) {

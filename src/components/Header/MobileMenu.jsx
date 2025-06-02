@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Arrow from '../../assets/icons/arrow.png';
 import { navigationItems } from '../../utils/NavigationData';
-import { navLinkStyles } from '../../utils/styles';
+import { navLinkStyles } from '../../utils/Styles.jsx';
 
 export default function MobileMenu({ isOpen, closeMenu, menuButtonRef }) {
     const [openSubmenu, setOpenSubmenu] = useState(null);
