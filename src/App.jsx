@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Inicio from './pages/home/Home.jsx';
-import Header from './components/Header/header.jsx';
+import Header from './components/Header/Header.jsx';
 import Novedades from './pages/news/News.jsx';
 import Contacto from './pages/contacts/Contact.jsx';
 import Antecedentes from './pages/precedents/Precedents.jsx';
