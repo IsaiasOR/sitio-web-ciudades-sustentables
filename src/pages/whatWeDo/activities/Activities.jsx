@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 import ShowImageActivity from '../components/ShowImageActivity';
 import SectionHeaderActivity from '../components/SectionHeaderActivity';
 import AutomaticCarousel from '../components/AutomaticCarousel.jsx';
-import Vision from '../../../assets/images/vision.jpg'
+import Activity from '../../../assets/images/activities-hero.jpg'
 
 export default function Activities() {
-    const images = [Vision, Vision, Vision, Vision];
+    const images = [Activity, Activity, Activity, Activity];
 
     return (
         <main>
