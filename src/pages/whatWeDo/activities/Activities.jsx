@@ -1,8 +1,13 @@
-import ShowImageActivity from './ShowImageActivity';
-import { Link } from 'react-router-dom';
 import ImageCover from '../../../assets/images/activities-hero.jpg';
+import { Link } from 'react-router-dom';
+import ShowImageActivity from '../components/ShowImageActivity';
+import SectionHeaderActivity from '../components/SectionHeaderActivity';
+import AutomaticCarousel from '../components/AutomaticCarousel.jsx';
+import Vision from '../../../assets/images/vision.jpg'
 
-export default function() {
+export default function Activities() {
+    const images = [Vision, Vision, Vision, Vision];
+
     return (
         <main>
             <section
@@ -16,11 +21,9 @@ export default function() {
             </section>
 
             <section>
-                <header className="relative z-10 text-center text-white p-15 bg-[#6ba94f]">
-                    <h1 className="text-xl md:text-3xl font-sans font-bold uppercase tracking-wider">ACTIVIDADES DE VINCULACIÓN CON LA EXTENSIÓN Y LA ACADEMIA</h1>
-                </header>
+                <SectionHeaderActivity title="ACTIVIDADES DE VINCULACIÓN CON LA EXTENSIÓN Y LA ACADEMIA"/>
 
-                <section className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-10 lg:mx-auto my-20 px-4 items-stretch">
+                <section className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-15 lg:mx-auto my-20 px-4 items-stretch">
                     <ShowImageActivity
                         image={ImageCover}
                         caption="Participación en la elaboración de la ley provincial de responsabilidad social"
@@ -31,6 +34,8 @@ export default function() {
                         caption="Integración de la comisión de responsabilidad social de la provincia"
                     />
 
+                    <AutomaticCarousel images={images} />
+
                     <ShowImageActivity
                         image={ImageCover}
                         caption="Desarrollo de eventos de difusión de los objetivos del desarrollo sostenible"
@@ -40,27 +45,33 @@ export default function() {
                         image={ImageCover}
                         caption="Vinculación con otros equipos de investigación en el país y del exterior"
                     />
+
+                    <AutomaticCarousel images={images} />
                 </section>
             </section>
 
             <section>
-                <header className="relative z-10 text-center text-white p-15 bg-[#6ba94f]">
-                    <h1 className="text-xl md:text-2xl font-sans font-bold mb-2">Proyecto Intercátedra 2024</h1>
-                    <h2 className="text-lg md:text-xl font-sans font-bold">Transparencia e Inteligencia Artificial</h2>
-                </header>
-                <ShowImageActivity
-                    image={ImageCover}
-                    caption="Proyecto Intercátedra 2024"
-                />
+                <SectionHeaderActivity
+                    title="Proyecto Intercátedra 2024"
+                    subtitle="Transparencia e Inteligencia Artificial"/>
+
+                <div className="max-w-6xl mx-auto my-20 px-4 flex justify-center">
+                    <div className="w-full md:w-1/2">
+                    <ShowImageActivity
+                        image={ImageCover}
+                        caption="Proyecto Intercátedra 2024"
+                    />
+                    </div>
+                </div>
             </section>
 
-            <section className="bg-[#6ba94f] my-10">
-                <header className="relative z-10 text-center text-white py-10 px-5 md:px-10">
-                    <h1 className="text-xl md:text-2xl font-sans font-bold mb-2">Actividades de difusión y concientización a estudiantes acerca de la importancia del reciclaje y el correcto uso de los cestos a través del proyecto de extensión "Si se recicla no es basura".</h1>
-                </header>
+            <section className="bg-[#6ba94f] my-20 py-10 px-5 md:px-20">
+                <SectionHeaderActivity
+                    title='Actividades de difusión y concientización a estudiantes acerca de la importancia del reciclaje y el correcto uso de los cestos a través del proyecto de extensión "Si se recicla no es basura".'/>
+
                 <div className="flex justify-center items-center">
                     <Link to="/que-hacemos/extension">
-                        <button className="text-white font-bold bg-green-800 px-20 py-2 mx-2 my-5 hover:cursor-pointer hover:shadow-md hover:bg-green-900 rounded-lg">
+                        <button className="text-white font-bold bg-green-800 px-10 md:px-20 py-2 mx-2 mb-5 hover:cursor-pointer hover:shadow-md hover:bg-green-900 rounded-lg">
                             SI SE RECICLE, NO ES BASURA
                         </button>
                     </Link>
@@ -68,10 +79,31 @@ export default function() {
             </section>
 
             <section>
-                <header className="relative z-10 text-center text-white p-15 bg-[#6ba94f]">
-                    <h1 className="text-xl md:text-2xl font-sans font-bold">Los estudiantes que integran nuestro equipo participan de diferentes congresos y concursos con sus publicaciones</h1>
-                </header>
+                <SectionHeaderActivity
+                    title="Los estudiantes que integran nuestro equipo participan de diferentes congresos y concursos con sus publicaciones"
+                />
+
+                <section className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-20 lg:mx-auto my-20 px-4 items-stretch">
+                    <ShowImageActivity
+                        image={ImageCover}
+                        title="AUGM"
+                        caption="JORNADAS DE JOVENES INVESTIGADORES"
+                    />
+
+                    <ShowImageActivity
+                        image={ImageCover}
+                        title="CONLAD"
+                        caption="CONGRESO LATINOAMERICANO DE ADMINISTRACIÓN"
+                    />
+
+                    <ShowImageActivity
+                        image={ImageCover}
+                        title="JAI"
+                        caption="JORNADAS NACIONALES DE ADMINISTRACIÓN E INFORMATICA"
+                    />
+                </section>
             </section>
+
         </main>
     );
 }

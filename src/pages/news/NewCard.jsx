@@ -2,7 +2,7 @@ export default function NewCard({ image, noticia, title }) {
     return (
         <article className="flex flex-col md:flex-row rounded-lg shadow-md overflow-hidden mx-5 md:mx-20 my-8">
             <div className="md:w-1/3 w-full h-auto">
-                <img src={image} alt="imagen" className="w-full h-full object-cover" />
+                <img src={image} alt={title} className="w-full h-full object-cover" />
             </div>
 
             {/* Contenido a la derecha */}

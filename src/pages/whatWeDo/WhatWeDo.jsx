@@ -19,14 +19,14 @@ export default function QueHacemos() {
                     <ShowResearchTopics />
                 </section>
 
-                <section className="bg-[#6ba94f] text-white text-center py-15 px-5 text-lg md:text-xl">
+                <section className="bg-[#6ba94f] text-white text-center py-16 px-5 text-lg md:text-xl mb-50">
                     <p><strong>{boldPart}:</strong>{rest.join(':')}</p>
                 </section>
 
-                <section className="bg-[#6ba94f] text-white text-center py-15 px-5 flex justify-center items-center flex-col md:flex-row md:justify-evenly">
-                    <h1 className="font-bold text-xl md:text-3xl">Algunas de nuestras actividades</h1>
+                <section className="bg-[#6ba94f] text-white text-center py-16 px-5 flex justify-center items-center flex-col gap-y-5 md:flex-row md:justify-evenly">
+                    <h1 className="font-bold text-xl md:text-3xl break-words text-center">Algunas de nuestras actividades</h1>
                     <Link to="/que-hacemos/actividades">
-                        <button className="text-black font-bold bg-white px-20 py-2 mx-2 my-5 hover:cursor-pointer hover:shadow-md hover:bg-gray-100 rounded-lg">
+                        <button className="transition-all duration-200 text-black font-bold bg-white px-8 md:px-20 py-2 mx-2 my-5 hover:cursor-pointer hover:shadow-md hover:bg-gray-100 rounded-lg">
                             Actividades
                         </button>
                     </Link>
