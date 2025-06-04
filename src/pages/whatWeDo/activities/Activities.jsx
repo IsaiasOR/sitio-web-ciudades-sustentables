@@ -1,7 +1,7 @@
 import ImageCover from '../../../assets/images/activities-hero.jpg';
 import { Link } from 'react-router-dom';
-import ShowImageActivity from '../components/ShowImageActivity';
-import SectionHeaderActivity from '../components/SectionHeaderActivity';
+import ShowImageCaption from '../components/ShowImageCaption.jsx';
+import SectionHeaderActivity from './SectionHeaderActivity.jsx';
 import AutomaticCarousel from '../components/AutomaticCarousel.jsx';
 import Activity from '../../../assets/images/activities-hero.jpg'
 
@@ -24,46 +24,74 @@ export default function Activities() {
                 <SectionHeaderActivity title="ACTIVIDADES DE VINCULACIÓN CON LA EXTENSIÓN Y LA ACADEMIA"/>
 
                 <section className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-15 lg:mx-auto my-20 px-4 items-stretch">
-                    <ShowImageActivity
+                    <ShowImageCaption
                         image={ImageCover}
                         caption="Participación en la elaboración de la ley provincial de responsabilidad social"
                     />
 
-                    <ShowImageActivity
+                    <ShowImageCaption
                         image={ImageCover}
                         caption="Integración de la comisión de responsabilidad social de la provincia"
                     />
 
-                    <AutomaticCarousel images={images} />
+                    <AutomaticCarousel images={images} caption="Caption" />
 
-                    <ShowImageActivity
+                    <ShowImageCaption
                         image={ImageCover}
                         caption="Desarrollo de eventos de difusión de los objetivos del desarrollo sostenible"
                     />
 
-                    <ShowImageActivity
+                    <ShowImageCaption
                         image={ImageCover}
                         caption="Vinculación con otros equipos de investigación en el país y del exterior"
                     />
 
-                    <AutomaticCarousel images={images} />
+                    <AutomaticCarousel images={images} caption="Caption" />
                 </section>
             </section>
 
             <section>
                 <SectionHeaderActivity
                     title="Proyecto Intercátedra 2024"
-                    subtitle="Transparencia e Inteligencia Artificial"/>
+                    subtitle="Transparencia e Inteligencia Artificial"
+                />
 
-                <div className="max-w-6xl mx-auto my-20 px-4 flex justify-center">
+                <div className="max-w-6xl mx-15 lg:mx-auto my-20 px-4 flex justify-center">
                     <div className="w-full md:w-1/2">
-                    <ShowImageActivity
-                        image={ImageCover}
-                        caption="Proyecto Intercátedra 2024"
-                    />
+                        <ShowImageCaption
+                            image={ImageCover}
+                            caption="Proyecto Intercátedra 2024"
+                        />
                     </div>
                 </div>
             </section>
+
+            <section>
+                <SectionHeaderActivity
+                    title="Los estudiantes que integran nuestro equipo participan de diferentes congresos y concursos con sus publicaciones"
+                />
+
+                <section className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-20 lg:mx-auto my-20 px-4 items-stretch">
+                    <ShowImageCaption
+                        image={ImageCover}
+                        title="AUGM"
+                        caption="JORNADAS DE JOVENES INVESTIGADORES"
+                    />
+
+                    <ShowImageCaption
+                        image={ImageCover}
+                        title="CONLAD"
+                        caption="CONGRESO LATINOAMERICANO DE ADMINISTRACIÓN"
+                    />
+
+                    <ShowImageCaption
+                        image={ImageCover}
+                        title="JAI"
+                        caption="JORNADAS NACIONALES DE ADMINISTRACIÓN E INFORMATICA"
+                    />
+                </section>
+            </section>
+
 
             <section className="bg-[#6ba94f] my-20 py-10 px-5 md:px-20">
                 <SectionHeaderActivity
@@ -76,32 +104,6 @@ export default function Activities() {
                         </button>
                     </Link>
                 </div>
-            </section>
-
-            <section>
-                <SectionHeaderActivity
-                    title="Los estudiantes que integran nuestro equipo participan de diferentes congresos y concursos con sus publicaciones"
-                />
-
-                <section className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-20 lg:mx-auto my-20 px-4 items-stretch">
-                    <ShowImageActivity
-                        image={ImageCover}
-                        title="AUGM"
-                        caption="JORNADAS DE JOVENES INVESTIGADORES"
-                    />
-
-                    <ShowImageActivity
-                        image={ImageCover}
-                        title="CONLAD"
-                        caption="CONGRESO LATINOAMERICANO DE ADMINISTRACIÓN"
-                    />
-
-                    <ShowImageActivity
-                        image={ImageCover}
-                        title="JAI"
-                        caption="JORNADAS NACIONALES DE ADMINISTRACIÓN E INFORMATICA"
-                    />
-                </section>
             </section>
 
         </main>

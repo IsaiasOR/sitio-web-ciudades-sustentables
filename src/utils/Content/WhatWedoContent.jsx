@@ -15,3 +15,18 @@ export const temasInvestigacion = {
 export const metodologia = {
     methodology: "Metodología - Trabajo de campo: nuestro universo esta conformado por los gobiernos locales del corredor del Río Uruguay en la provincia de Entre Ríos."
 }
+
+export const congresos = [
+    {
+        title: "AUGM",
+        description: "JORNADAS DE JOVENES INVESTIGADORES"
+    },
+    {
+        title: "CONLAD",
+        description: "CONGRESO LATINOAMERICANO DE ADMINISTRACIÓN"
+    },
+    {
+        title: "JAI",
+        description: "JORNADAS NACIONALES DE ADMINISTRACIÓN E INFORMATICA"
+    }
+]
