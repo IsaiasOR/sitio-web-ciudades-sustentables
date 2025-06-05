@@ -3,16 +3,9 @@ import HeroSection from '../../components/HeroSection/HeroSection';
 import AboutUsSection from './AboutUsSection';
 import { quienesSomosTextos, queBuscamos } from '../../utils/Content/AboutUsContent';
 import MissionVisionSection from './MissionVisionSection';
-import { mision, vision, proposito } from '../../utils/Content/MissionVisionContent.jsx';
-import ImageMision from '../../assets/images/mision.jpg'
-import ImageVision from '../../assets/images/vision.jpg'
-import ImageProposito from '../../assets/images/proposito.jpg'
+import { missionVissionContent } from '../../utils/Content/MissionVisionContent.jsx';
 import ValuesSection from './ValuesSection';
-import IconRigurosidad from '../../assets/icons/rigurosidad.png';
-import IconRespeto from '../../assets/icons/respeto.png';
-import IconSolidaridad from '../../assets/icons/solidaridad.png';
-import IconConfianza from '../../assets/icons/confianza.png';
-import IconTransparencia from '../../assets/icons/transparencia.png';
+import { IconConfianza, IconRespeto, IconRigurosidad, IconSolidaridad, IconTransparencia } from '../../assets/icons/index.jsx';
 import SocialNetworks from '../../components/SocialNetworks/SocialNetworks.jsx';
 
 export default function Home() {
@@ -36,29 +29,19 @@ export default function Home() {
             <section
                     className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-10 lg:mx-auto my-20 px-4 items-stretch"
                     aria-labelledby="mision-vision-proposito">
-                <div>
-                    <MissionVisionSection
-                        image={ImageMision}
-                        title="Nuestra misión"
-                        paragraphs={mision}
-                    />
-                </div>
 
-                <div>
-                    <MissionVisionSection
-                        image={ImageVision}
-                        title="Nuestra visión"
-                        paragraphs={vision}
-                    />
-                </div>
-
-                <div className="md:col-span-2">
-                    <MissionVisionSection
-                        image={ImageProposito}
-                        title="Nuestro propósito"
-                        paragraphs={proposito}
-                    />
-                </div>
+                    {missionVissionContent.map((item, index) => (
+                        <div
+                            key={index}
+                            className={index === missionVissionContent.length - 1 ? "md:col-span-2" : ""}
+                        >
+                            <MissionVisionSection
+                                image={item.image}
+                                title={item.title}
+                                paragraphs={item.text}
+                            />
+                        </div>
+                    ))}
             </section>
 
             {/* Sección valores */}

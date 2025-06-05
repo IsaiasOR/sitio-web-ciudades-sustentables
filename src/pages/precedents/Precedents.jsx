@@ -15,7 +15,7 @@ export default function Antecedentes() {
 
             <section>
                 <header className="relative z-10 text-center p-15 bg-[#6ba94f] text-white">
-                    <h1 className="text-2xl md:text-5xl font-sans font-bold uppercase tracking-wider">Proyectos</h1>
+                    <h2 className="text-2xl md:text-5xl font-sans font-bold uppercase tracking-wider">Proyectos</h2>
                 </header>
 
                 <MentionProyect

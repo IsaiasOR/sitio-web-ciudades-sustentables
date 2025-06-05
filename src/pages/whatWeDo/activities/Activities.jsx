@@ -4,6 +4,7 @@ import ShowImageCaption from '../components/ShowImageCaption.jsx';
 import SectionHeaderActivity from './SectionHeaderActivity.jsx';
 import AutomaticCarousel from '../components/AutomaticCarousel.jsx';
 import Activity from '../../../assets/images/activities-hero.jpg'
+import Button from '../../../components/Button/Button.jsx';
 
 export default function Activities() {
     const images = [Activity, Activity, Activity, Activity];
@@ -99,9 +100,7 @@ export default function Activities() {
 
                 <div className="flex justify-center items-center">
                     <Link to="/que-hacemos/extension">
-                        <button className="text-white font-bold bg-green-800 px-10 md:px-20 py-2 mx-2 mb-5 hover:cursor-pointer hover:shadow-md hover:bg-green-900 rounded-lg">
-                            SI SE RECICLE, NO ES BASURA
-                        </button>
+                        <Button text="SI SE RECICLE, NO ES BASURA" />
                     </Link>
                 </div>
             </section>

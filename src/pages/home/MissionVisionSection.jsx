@@ -8,9 +8,11 @@ export default function MissionVisionSection({ image, title, paragraphs }) {
                 <h3 className="text-lg md:text-2xl font-sans font-bold tracking-wider">{title}</h3>
             </header>
             <div className="relative z-10 text-center font-sans text-sm md:text-lg px-10 py-2 md:px-10">
-                {paragraphs.map((item) => (
-                    <p key={item.id} className="mb-4">{item.text}</p>
-                ))}
+                {Array.isArray(paragraphs) ? paragraphs.map((item, index) => (
+                    <p key={index} className="mb-4">{item}</p>
+                ))
+                : <p>{paragraphs}</p>
+                }
             </div>
         </section>
     );
