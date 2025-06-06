@@ -5,6 +5,15 @@ import { pidNovel7037, pidNovel7038, pid7045, pid7056, pid7082 } from '../../uti
 import { navigationItems } from '../../utils/NavigationData';
 
 export default function Antecedentes() {
+
+const proyectos = [
+    { ...pidNovel7037, link: navigationItems.antecedentes[0].path },
+    { ...pidNovel7038, link: navigationItems.antecedentes[1].path },
+    { ...pid7045, link: navigationItems.antecedentes[2].path },
+    { ...pid7056, link: navigationItems.antecedentes[3].path },
+    { ...pid7082, link: navigationItems.antecedentes[4].path },
+];
+
     return (
         <main>
             {/* Sección Hero */}
@@ -18,39 +27,17 @@ export default function Antecedentes() {
                     <h2 className="text-2xl md:text-5xl font-sans font-bold uppercase tracking-wider">Proyectos</h2>
                 </header>
 
-                <MentionProyect
-                    title={pidNovel7037.abbreviation}
-                    dates={pidNovel7037.dates}
-                    link={navigationItems.antecedentes[0].path}
-                />
-                <div className="bg-[#6ba94f] h-10" />
-
-                <MentionProyect
-                    title={pidNovel7038.abbreviation}
-                    dates={pidNovel7038.dates}
-                    link={navigationItems.antecedentes[1].path}
-                />
-                <div className="bg-[#6ba94f] h-10" />
-
-                <MentionProyect
-                    title={pid7045.abbreviation}
-                    dates={pid7045.dates}
-                    link={navigationItems.antecedentes[2].path}
-                />
-                <div className="bg-[#6ba94f] h-10" />
-
-                <MentionProyect
-                    title={pid7056.abbreviation}
-                    dates={pid7056.dates}
-                    link={navigationItems.antecedentes[3].path}
-                />
-                <div className="bg-[#6ba94f] h-10" />
-
-                <MentionProyect
-                    title={pid7082.abbreviation}
-                    dates={pid7082.dates}
-                    link={navigationItems.antecedentes[4].path}
-                />
+                {proyectos.map(({ abbreviation, dates, link }, index) => (
+                    <div key={index}>
+                        <MentionProyect
+                            title={abbreviation}
+                            dates={dates}
+                            link={link}
+                        />
+                        {/* Separador salvo en el último */}
+                        {index < proyectos.length - 1 && <div className="bg-[#6ba94f] h-10" />}
+                    </div>
+                ))}
             </section>
         </main>
     );

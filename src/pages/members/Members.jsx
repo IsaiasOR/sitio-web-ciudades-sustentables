@@ -14,9 +14,9 @@ export default function Integrantes() {
 
             <section>
                 <header className="relative z-10 text-center p-15 xl:px-70 bg-[#6ba94f] text-white">
-                    <h1 className="text-xl md:text-3xl font-sans font-bold">
+                    <h2 className="text-xl md:text-3xl font-sans font-bold">
                         Estamos orgullosos de la riqueza profesional, pero fundamentalmente de la humana que tiene nuestro equipo
-                    </h1>
+                    </h2>
                 </header>
 
                 <section className="my-10 xl:mx-50 grid grid-cols-1 md:grid-cols-2 gap-8 p-8">

@@ -45,42 +45,48 @@ export default function Home() {
             </section>
 
             {/* Sección valores */}
-            <section className="bg-[#d5e5d8] mt-20">
-                <h2 className="text-xl md:text-3xl font-sans font-bold uppercase tracking-wider text-center py-20 px-4">
-                    NUESTROS VALORES
-                </h2>
-                <div className="flex justify-center flex-col md:flex-row">
-                    <ValuesSection
-                        image={IconRigurosidad}
-                        title="Rigurosidad"
-                    />
-
-                    <ValuesSection
-                        image={IconTransparencia}
-                        title="Transparencia"
-                    />
-
-                    <ValuesSection
-                        image={IconSolidaridad}
-                        title="Solidaridad"
-                    />
-
-                    <ValuesSection
-                        image={IconRespeto}
-                        title="Respeto"
-                    />
-
-                    <ValuesSection
-                        image={IconConfianza}
-                        title="Confianza"
-                    />
-                </div>
-            </section>
+            <ValuesSectionHome />
 
             {/* Redes sociales */}
             <section className="bg-[#6ba94f]">
                 <SocialNetworks title="Podes comunicarte con el equipo en nuestras redes" />
             </section>
         </main>
+    );
+}
+
+function ValuesSectionHome() {
+    return (
+        <section className="bg-[#d5e5d8] mt-20">
+            <h2 className="text-xl md:text-3xl font-sans font-bold uppercase tracking-wider text-center py-20 px-4">
+                NUESTROS VALORES
+            </h2>
+            <div className="flex justify-center flex-col md:flex-row">
+                <ValuesSection
+                    image={IconRigurosidad}
+                    title="Rigurosidad"
+                />
+
+                <ValuesSection
+                    image={IconTransparencia}
+                    title="Transparencia"
+                />
+
+                <ValuesSection
+                    image={IconSolidaridad}
+                    title="Solidaridad"
+                />
+
+                <ValuesSection
+                    image={IconRespeto}
+                    title="Respeto"
+                />
+
+                <ValuesSection
+                    image={IconConfianza}
+                    title="Confianza"
+                />
+            </div>
+        </section>
     );
 }

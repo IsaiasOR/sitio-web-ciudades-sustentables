@@ -4,7 +4,7 @@ export default function AboutUsSection({ title, paragraphs }) {
     return (
         <section>
                 <header className="relative z-10 text-center p-10 bg-[#6ba94f] text-white">
-                    <h2 className="text-xl md:text-3xl font-sans font-bold uppercase tracking-wider">{title}</h2>
+                    <h3 className="text-xl md:text-3xl font-sans font-bold uppercase tracking-wider">{title}</h3>
                 </header>
                 <div className="relative z-10 text-center text-sm md:text-lg py-10 px-10 md:px-50 bg-[#d5e5d8]">
                     {paragraphs.map((item) => (

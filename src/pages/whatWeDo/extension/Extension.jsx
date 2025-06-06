@@ -15,14 +15,14 @@ export default function() {
             <section>
                 <article className="md:mx-20 lg:mx-56 my-20 flex flex-col justify-center items-center">
                     <div className="p-5 m-5">
-                        <h1 className="text-green-700 text-center text-2xl md:text-4xl font-bold mb-10 tracking-wide">{siSeRecicle.title}</h1>
+                        <h2 className="text-green-700 text-center text-2xl md:text-4xl font-bold mb-10 tracking-wide">{siSeRecicle.title}</h2>
                         <p className="font-serif text-center leading-relaxed">{siSeRecicle.text}</p>
                     </div>
                 </article>
 
                 <section className="max-w-6xl mx-15 lg:mx-auto my-20 px-4 space-y-12">
                     {/* Grid de imágenes: 2 columnas en pantallas medianas+ */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
                         <ShowImageCaption
                         image={ImageCover}
                         caption="Separado es un recurso"

@@ -7,8 +7,6 @@ import Activity from '../../../assets/images/activities-hero.jpg'
 import Button from '../../../components/Button/Button.jsx';
 
 export default function Activities() {
-    const images = [Activity, Activity, Activity, Activity];
-
     return (
         <main>
             <section
@@ -23,32 +21,7 @@ export default function Activities() {
 
             <section>
                 <SectionHeaderActivity title="ACTIVIDADES DE VINCULACIÓN CON LA EXTENSIÓN Y LA ACADEMIA"/>
-
-                <section className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-15 lg:mx-auto my-20 px-4 items-stretch">
-                    <ShowImageCaption
-                        image={ImageCover}
-                        caption="Participación en la elaboración de la ley provincial de responsabilidad social"
-                    />
-
-                    <ShowImageCaption
-                        image={ImageCover}
-                        caption="Integración de la comisión de responsabilidad social de la provincia"
-                    />
-
-                    <AutomaticCarousel images={images} caption="Caption" />
-
-                    <ShowImageCaption
-                        image={ImageCover}
-                        caption="Desarrollo de eventos de difusión de los objetivos del desarrollo sostenible"
-                    />
-
-                    <ShowImageCaption
-                        image={ImageCover}
-                        caption="Vinculación con otros equipos de investigación en el país y del exterior"
-                    />
-
-                    <AutomaticCarousel images={images} caption="Caption" />
-                </section>
+                <ActividadesVinculacionExtension />
             </section>
 
             <section>
@@ -71,26 +44,7 @@ export default function Activities() {
                 <SectionHeaderActivity
                     title="Los estudiantes que integran nuestro equipo participan de diferentes congresos y concursos con sus publicaciones"
                 />
-
-                <section className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-20 lg:mx-auto my-20 px-4 items-stretch">
-                    <ShowImageCaption
-                        image={ImageCover}
-                        title="AUGM"
-                        caption="JORNADAS DE JOVENES INVESTIGADORES"
-                    />
-
-                    <ShowImageCaption
-                        image={ImageCover}
-                        title="CONLAD"
-                        caption="CONGRESO LATINOAMERICANO DE ADMINISTRACIÓN"
-                    />
-
-                    <ShowImageCaption
-                        image={ImageCover}
-                        title="JAI"
-                        caption="JORNADAS NACIONALES DE ADMINISTRACIÓN E INFORMATICA"
-                    />
-                </section>
+                <Congresos />
             </section>
 
 
@@ -106,5 +60,61 @@ export default function Activities() {
             </section>
 
         </main>
+    );
+}
+
+function ActividadesVinculacionExtension() {
+    const images = [Activity, Activity, Activity, Activity];
+
+    return (
+        <section className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-15 lg:mx-auto my-20 px-4 items-stretch">
+            <ShowImageCaption
+                image={ImageCover}
+                caption="Participación en la elaboración de la ley provincial de responsabilidad social"
+            />
+
+            <ShowImageCaption
+                image={ImageCover}
+                caption="Integración de la comisión de responsabilidad social de la provincia"
+            />
+
+            <AutomaticCarousel images={images} caption="Caption" />
+
+            <ShowImageCaption
+                image={ImageCover}
+                caption="Desarrollo de eventos de difusión de los objetivos del desarrollo sostenible"
+            />
+
+            <ShowImageCaption
+                image={ImageCover}
+                caption="Vinculación con otros equipos de investigación en el país y del exterior"
+            />
+
+            <AutomaticCarousel images={images} caption="Caption" />
+        </section>
+    );
+}
+
+function Congresos() {
+    return (
+        <section className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-20 lg:mx-auto my-20 px-4 items-stretch">
+            <ShowImageCaption
+                image={ImageCover}
+                title="AUGM"
+                caption="JORNADAS DE JOVENES INVESTIGADORES"
+            />
+
+            <ShowImageCaption
+                image={ImageCover}
+                title="CONLAD"
+                caption="CONGRESO LATINOAMERICANO DE ADMINISTRACIÓN"
+            />
+
+            <ShowImageCaption
+                image={ImageCover}
+                title="JAI"
+                caption="JORNADAS NACIONALES DE ADMINISTRACIÓN E INFORMATICA"
+            />
+        </section>
     );
 }
