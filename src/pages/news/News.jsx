@@ -1,5 +1,5 @@
 import HeroSection from '../../components/HeroSection/HeroSection';
-import ImageCover from '../../assets/images/novedades-hero.jpg';
+import ImageCover from '../../assets/images/novedades-hero.webp';
 import NewCard from './components/NewCard';
 import { proyectoIntecatedraTranspareciaIA, segundaJIJI, reseniaPID7056, equipoCiudadesSustentablesAvances } from '../../utils/Content/NewsContent'
 import SocialNetworks from '../../components/SocialNetworks/SocialNetworks';

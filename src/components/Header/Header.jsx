@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useState, useRef } from 'react';
-import Logo from '../../assets/icons/logoSustentable.svg';
-import Menu from '../../assets/icons/menu.png';
+import { LogoSustentable } from '../../assets/icons/index.jsx';
+import Menu from '../../assets/icons/menu.webp';
 import DesktopMenu from './DesktopMenu';
 import MobileMenu from './MobileMenu.jsx';
 
@@ -14,7 +14,7 @@ export default function Header() {
             {/* Logo */}
             <div>
                 <Link to="/">
-                    <img src={Logo} alt="logo-sustentable" className="size-9" />
+                    <img src={LogoSustentable} alt="logo-sustentable" className="size-9" />
                 </Link>
             </div>
 

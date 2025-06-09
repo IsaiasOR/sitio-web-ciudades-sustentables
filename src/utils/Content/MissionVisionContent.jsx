@@ -1,6 +1,6 @@
-import ImageMision from '../../assets/images/mision.jpg';
-import ImageVision from '../../assets/images/vision.jpg';
-import ImageProposito from '../../assets/images/proposito.jpg';
+import ImageMision from '../../assets/images/mision.webp';
+import ImageVision from '../../assets/images/vision.webp';
+import ImageProposito from '../../assets/images/proposito.webp';
 
 export const missionVissionContent = [
     {

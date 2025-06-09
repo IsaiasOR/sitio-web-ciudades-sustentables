@@ -1,4 +1,4 @@
-import ImageCover from '../../../assets/images/activities-hero.jpg';
+import ImageCover from '../../../assets/images/activities-hero.webp';
 
 export default function LinkNewsExtension() {
     return(

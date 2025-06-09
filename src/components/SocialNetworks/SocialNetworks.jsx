@@ -8,13 +8,13 @@ export default function SocialNetworks({ title }){
             </h5>
             <div className="flex justify-around w-40 md:w-50 pt-5 md:pt-0">
                 <a href="https://ar.linkedin.com/in/ciudades-sustentables-concordia-b773031b9" target="_blank" rel="noopener noreferrer">
-                    <img src={IconLinkedIn} alt="Logo de LinkedIn" className="w-10 object-contain" />
+                    <img src={IconLinkedIn} alt="Logo de LinkedIn" className="w-10 object-contain" loading="lazy" />
                 </a>
                 <a href="https://www.instagram.com/ciudades.sustentables/" target="_blank" rel="noopener noreferrer">
-                    <img src={IconInstagram} alt="Logo de Instagram" className="w-10 object-contain" />
+                    <img src={IconInstagram} alt="Logo de Instagram" className="w-10 object-contain" loading="lazy" />
                 </a>
                 <a href="https://www.facebook.com/ciudadsustentables/" target="_blank" rel="noopener noreferrer">
-                    <img src={IconFacebook} alt="Logo de Facebook" className="w-10 object-contain" />
+                    <img src={IconFacebook} alt="Logo de Facebook" className="w-10 object-contain" loading="lazy" />
                 </a>
             </div>
         </section>

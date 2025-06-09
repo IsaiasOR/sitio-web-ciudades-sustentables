@@ -1,4 +1,4 @@
-import ImageCover from '../../assets/images/home-hero.jpg';
+import ImageCover from '../../assets/images/home-hero.webp';
 import HeroSection from '../../components/HeroSection/HeroSection';
 import AboutUsSection from './AboutUsSection';
 import { quienesSomosTextos, queBuscamos } from '../../utils/Content/AboutUsContent';

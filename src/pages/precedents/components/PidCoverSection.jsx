@@ -1,4 +1,4 @@
-import ImageCover from '../../../assets/images/pid-hero.jpg'
+import ImageCover from '../../../assets/images/pid-hero.webp'
 
 export default function PidCoverSection({ title }) {
     return (

@@ -1,5 +1,5 @@
 import HeroSection from '../../components/HeroSection/HeroSection';
-import ImageCover from '../../assets/images/que-hacemos-hero.jpg';
+import ImageCover from '../../assets/images/que-hacemos-hero.webp';
 import ShowResearchTopics from './components/ShowResearchTopics';
 import { metodologia } from '../../utils/Content/WhatWedoContent';
 import { Link } from "react-router-dom";

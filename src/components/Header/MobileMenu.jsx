@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
-import Arrow from '../../assets/icons/arrow.png';
+import Arrow from '../../assets/icons/arrow.webp';
 import { navigationItems } from '../../utils/NavigationData';
 import { navLinkStyles } from '../../utils/Styles.jsx';
 

@@ -1,5 +1,5 @@
 import HeroSection from '../../components/HeroSection/HeroSection';
-import ImageCover from '../../assets/images/integrantes-hero.jpg';
+import ImageCover from '../../assets/images/integrantes-hero.webp';
 import Member from './components/Member';
 import { members } from '../../utils/Content/MembersContent'
 

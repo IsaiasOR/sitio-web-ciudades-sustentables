@@ -1,5 +1,5 @@
 import HeaderExtension from './HeaderExtension.jsx';
-import ImageCover from '../../../assets/images/activities-hero.jpg';
+import ImageCover from '../../../assets/images/activities-hero.webp';
 import AutomaticCarousel from '../components/AutomaticCarousel.jsx';
 import { siSeRecicle } from '../../../utils/Content/ExtensionContent.jsx';
 import LinkNewsExtension from './LinkNewsExtension.jsx';

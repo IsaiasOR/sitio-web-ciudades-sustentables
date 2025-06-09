@@ -1,5 +1,5 @@
 import HeroSection from '../../components/HeroSection/HeroSection';
-import ImageCover from '../../assets/images/contacto-hero.jpg';
+import ImageCover from '../../assets/images/contacto-hero.webp';
 import SocialNetworks from '../../components/SocialNetworks/SocialNetworks';
 import Button from '../../components/Button/Button';
 import MapaSection from './components/MapaSection';

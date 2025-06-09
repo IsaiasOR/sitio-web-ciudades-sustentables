@@ -1,5 +1,5 @@
 import HeroSection from '../../components/HeroSection/HeroSection';
-import ImageCover from '../../assets/images/antecedentes-hero.jpg';
+import ImageCover from '../../assets/images/antecedentes-hero.webp';
 import MentionProyect from './components/MentionProject';
 import { pidNovel7037, pidNovel7038, pid7045, pid7056, pid7082 } from '../../utils/Content/PidContent';
 import { navigationItems } from '../../utils/NavigationData';

@@ -1,9 +1,9 @@
-import ImageCover from '../../../assets/images/activities-hero.jpg';
+import ImageCover from '../../../assets/images/activities-hero.webp';
 import { Link } from 'react-router-dom';
 import ShowImageCaption from '../components/ShowImageCaption.jsx';
 import SectionHeaderActivity from './SectionHeaderActivity.jsx';
 import AutomaticCarousel from '../components/AutomaticCarousel.jsx';
-import Activity from '../../../assets/images/activities-hero.jpg'
+import Activity from '../../../assets/images/activities-hero.webp'
 import Button from '../../../components/Button/Button.jsx';
 
 export default function Activities() {
