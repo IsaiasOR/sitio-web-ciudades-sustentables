@@ -7,23 +7,15 @@ import SocialNetworks from '../../components/SocialNetworks/SocialNetworks';
 export default function Novedades() {
     const newsItems = [
         {
-            image: ImageCover,
-            title: "Proyecto Intercatédra",
             noticia: proyectoIntecatedraTranspareciaIA,
         },
         {
-            image: ImageCover,
-            title: "Segunda Jornada Interna de Jóvenes Investigadores de la UNER",
             noticia: segundaJIJI,
         },
         {
-            image: ImageCover,
-            title: "Reseña del PID 7056 publicada",
             noticia: reseniaPID7056,
         },
         {
-            image: ImageCover,
-            title: "Equipo Ciudades Sustentables - Avances",
             noticia: equipoCiudadesSustentablesAvances,
         },
     ];
