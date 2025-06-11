@@ -3,7 +3,7 @@ import ImageCover from '../../../assets/images/integrantes-hero.webp';
 
 export default function Member({ name, subtitle = null, description, linkedin }) {
     return (
-        <article className="mx-10 flex flex-col justify-around items-center rounded-lg shadow-md overflow-hidden">
+        <article className="min-w-[280px] max-w-xl mx-auto flex flex-col justify-around items-center rounded-lg shadow-md overflow-hidden">
             <div>
                 <img src={ImageCover} alt={name} className="w-96 h-full object-cover rounded-xl" loading="lazy" />
             </div>

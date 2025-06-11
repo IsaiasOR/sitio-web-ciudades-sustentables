@@ -5,12 +5,12 @@ import ImageProposito from '../../assets/images/proposito.webp';
 export const missionVissionContent = [
     {
         title:"Nuestra misión",
-        text: "Aquí puedes ingresar más información sobre el valor fundamental de tu equipo.",
+        text: "Desarrollar y implementar sistemas de indicadores de responsabilidad social y sustentabilidad que permitan a los gobiernos locales del corredor del Río Uruguay integrar eficazmente la información social a sus procesos de gestión, fortaleciendo la toma de decisiones y la medición del impacto en sus comunidades.",
         image: ImageMision
     },
     {
         title:"Nuestra visión",
-        text: "Aquí puedes ingresar más información sobre el valor fundamental de tu equipo.",
+        text: "Ser referentes en la promoción de gobiernos locales socialmente responsables y sustentables en la región, contribuyendo a una gestión pública más transparente, inclusiva y orientada al bienestar de todos los grupos de interés.",
         image: ImageVision
     },
     {

@@ -78,7 +78,7 @@ function ActividadesVinculacionExtension() {
                 caption="Integración de la comisión de responsabilidad social de la provincia"
             />
 
-            <AutomaticCarousel images={images} caption="Caption" />
+            <AutomaticCarousel images={images} caption="Imágenes" />
 
             <ShowImageCaption
                 image={ImageCover}
@@ -90,7 +90,7 @@ function ActividadesVinculacionExtension() {
                 caption="Vinculación con otros equipos de investigación en el país y del exterior"
             />
 
-            <AutomaticCarousel images={images} caption="Caption" />
+            <AutomaticCarousel images={images} caption="Charla de concientización realizada a los ingresantes de las carrera de Contador Público y Licentiatura en Administración" />
         </section>
     );
 }

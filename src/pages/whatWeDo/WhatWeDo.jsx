@@ -20,11 +20,11 @@ export default function QueHacemos() {
                     <ShowResearchTopics />
                 </section>
 
-                <section className="bg-[#6ba94f] text-white text-center py-16 px-5 text-lg md:text-xl mb-50">
+                <section className="bg-[#6ba94f] text-white text-center py-16 px-5 text-lg md:text-xl mb-12">
                     <p><strong>{boldPart}:</strong>{rest.join(':')}</p>
                 </section>
 
-                <section className="bg-[#6ba94f] text-white text-center py-16 px-5 flex justify-center items-center flex-col gap-y-5 md:flex-row md:justify-evenly">
+                <section className="bg-[#6ba94f] text-white text-center py-16 px-5 flex justify-center items-center flex-col gap-y-5 md:flex-row md:justify-evenly mb-12">
                     <h1 className="font-bold text-xl md:text-3xl break-words text-center">Algunas de nuestras actividades</h1>
                     <Link to="/que-hacemos/actividades">
                         <Button text="Actividades" />
